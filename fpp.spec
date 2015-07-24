@@ -21,9 +21,9 @@ convenient UI.
 %prep
 %setup -qc
 
-# remove some bsdtar junk
+# remove some bsdtar junk (AppleDouble encoded Macintosh files)
 # https://github.com/facebook/PathPicker/issues/174
-rm -vf src/.??*
+rm -vf src/._*
 
 %install
 rm -rf $RPM_BUILD_ROOT
