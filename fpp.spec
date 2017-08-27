@@ -1,12 +1,12 @@
 Summary:	Bash Output File Picker
 Name:		fpp
-Version:	0.6.1
+Version:	0.7.2
 Release:	1
 License:	BSD
 Group:		Applications/Shells
 Source0:	https://github.com/facebook/PathPicker/releases/download/%{version}/%{name}.%{version}.tar.gz
-# Source0-md5:	52d0b3b347229c8ac05eace8a5892536
-URL:		http://facebook.github.io/PathPicker/
+# Source0-md5:	acbd3e03f920d8076acc11662930cd23
+URL:		https://facebook.github.io/PathPicker/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
