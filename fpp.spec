@@ -1,15 +1,14 @@
 Summary:	Bash Output File Picker
 Name:		fpp
-Version:	0.8.2
+Version:	0.9.2
 Release:	1
 License:	BSD
 Group:		Applications/Shells
 Source0:	https://github.com/facebook/PathPicker/releases/download/%{version}/%{name}.%{version}.tar.gz
-# Source0-md5:	8749b5d492878f1fc2cfb5d928c9a44f
+# Source0-md5:	722e3e6d9b52c305722bd2e46d3cb81b
 URL:		https://facebook.github.io/PathPicker/
-Requires:	python >= 1:2.6
-Requires:	python-future
-Requires:	python-modules >= 1:2.6
+Requires:	python3
+Requires:	python3-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
