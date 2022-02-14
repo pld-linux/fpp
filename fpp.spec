@@ -1,11 +1,11 @@
 Summary:	Bash Output File Picker
 Name:		fpp
-Version:	0.9.2
+Version:	0.9.5
 Release:	1
 License:	BSD
 Group:		Applications/Shells
-Source0:	https://github.com/facebook/PathPicker/releases/download/%{version}/%{name}.%{version}.tar.gz
-# Source0-md5:	722e3e6d9b52c305722bd2e46d3cb81b
+Source0:	https://github.com/facebook/PathPicker/archive/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	b0ad45fd1789423c4fa31619d95c144c
 URL:		https://facebook.github.io/PathPicker/
 Requires:	python3
 Requires:	python3-modules
@@ -21,7 +21,7 @@ PathPicker parses piped input for files and presents it in a
 convenient UI.
 
 %prep
-%setup -qc
+%setup -q -n PathPicker-%{version}
 
 # remove some bsdtar junk (AppleDouble encoded Macintosh files)
 # https://github.com/facebook/PathPicker/issues/174
